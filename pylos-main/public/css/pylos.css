@@ -1,0 +1,174 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-panel {
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+  top: 50%;
+}
+
+#info-panel .ball-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:white;
+  position: relative;
+  width: 200px;
+  height: 10px;
+  left:25%;
+  top: 80px;
+}
+
+#balls {
+  display: flex;
+  justify-content: center;
+  background-color:white;
+  position: relative;
+  width: 200px;
+  height: 10px;
+  left:-20%;
+}
+/*#info-panel .ball-info .ball {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 8px 0;
+}*/
+
+/*#info-panel .ball-info.turn {
+  background: rgba(44, 165, 0, 0.5);
+}*/
+
+#balls .ball-number{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+#info-panel .ball-info .note {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+
+#info-panel .divider {
+  width: 100px;
+}
+#mePlayer{
+  background-color: #ead73f;
+  position: relative;
+}
+
+/*#info-panel .ball-number {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+#info-panel .ball-info .ball {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 8px 0;
+}*/
+
+/*#info-panel .ball-info.turn {
+  background: rgba(44, 165, 0, 0.5);
+}*/
+
+#info-panel .ball-info .number, #info-panel .ball-info .note {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:3px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top:30%;
+    left:65%;
+}
+
+#notification{
+	border : 5px solid black;
+	border-radius: 10px;
+	position: relative;
+	background-color: whitesmoke;
+	width: 300px;
+	height:	100px;
+	left: 0%;
+	right: 0%;
+	top: 50%;
+	margin: 0px;
+}
+
+canvas{
+    border : 10px solid black;
+    border-style: outset;
+    border-radius: 10px;
+    padding: 0;
+    position: relative;
+
+}
+
+#logWindow {
+    position: absolute;
+    width: 800;
+    height: 800;
+    top: 20%;
+    left: 5%;
+    background-color: whitesmoke;
+    z-index: 20;
+
+  }
+
+/*pre{
+	animation: slidein 3s 1;
+}*/
+
+@keyframes slidein {
+
+  from {
+
+    margin-left: 0%;
+    width: 50%;
+    
+  }
+
+  to {
+
+    margin-left: 0%;
+    width: 50%;
+    
+  }
+
+}
+
+#notif {
+  color: red;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+}
+
+.hidden{
+  display: none;
+}
+
+.shown{
+  display: flex;
+}
+
+.makeItMyTurn {
+  background: rgba(134, 1, 1, 0.753);
+}
+
+.makeItNotMyTurn {
+  background: hsla(0, 1%, 52%, 0.63);
+}
